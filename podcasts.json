@@ -1,0 +1,98 @@
+[
+    {
+        "title": "Vitamin Berge",
+        "feed": "https://vitaminberge.de/feed/podcast/",
+        "website": "https://vitaminberge.de/"
+    },
+    {
+        "title": "Running Podcast",
+        "feed": "http://www.running-podcast.de/feed/mp3/",
+        "website": "http://www.running-podcast.de/"
+    },
+    {
+        "title": "Fat Boys Run",
+        "feed": "http://www.fatboysrun.de/feed/podcast",
+        "website": "http://www.fatboysrun.de/",
+        "bgcolor": "#FFFFFF"
+    },
+    {
+        "title": "Läuft Bei Mir",
+        "feed": "http://www.fatboysrun.de/feed/lbm",
+        "website": "https://www.michael-arend.de/lbm/",
+        "cover_url": "http://www.michael-arend.de/wp-content/uploads/2016/09/logopodcast.jpg",
+        "bgcolor": "#DDC99B"
+    },
+    {
+        "title": "3 Schweinehunde",
+        "feed": "https://3-schweinehun.de/episodes.mp3.rss",
+        "website": "https://3-schweinehun.de/",
+        "bgcolor": "#3D655F"
+    },
+    {
+        "title": "beVegt",
+        "feed": "https://bevegt.libsyn.com/rss",
+        "website": "https://www.bevegt.de/",
+        "bgcolor": "#EDCB3B"
+    },
+    {
+        "title": "LaufenLiebeErdnussbutter",
+        "feed": "http://laufenliebeerdnussbutter.de/feed/podcast",
+        "website": "http://laufenliebeerdnussbutter.de/",
+        "bgcolor": "#D6B529"
+    },
+    {
+        "title": "Schnaufcast",
+        "feed": "https://feed.informer.com/digests/6K4Y8IE7QF/feeder.rss",
+        "website": "https://www.schnaufcast.de/",
+        "cover_url": "https://image.jimcdn.com/app/cms/image/transf/dimension=512x512:format=jpg/path/s45d3690c1c0a2505/image/i8a872ec9dc216267/version/1519633005/image.jpg",
+        "bgcolor": "#FFFFFF"
+    },
+    {
+        "title": "Schnaufwechsel",
+        "feed": "http://schnaufwechsel.de/feed/",
+        "website": "http://schnaufwechsel.de/",
+        "bgcolor": "#A6A5A6"
+    },
+    {
+        "title": "Trailgierig",
+        "feed": "http://trailgierig.podspot.de/rss",
+        "website": "https://trailgierig.com/",
+        "bgcolor": "#26217D"
+    },
+    {
+        "title": "Trailrunnersdog",
+        "feed": "https://www.trailrunnersdog.de/feed/podcast",
+        "website": "https://www.trailrunnersdog.de/",
+        "bgcolor": "#5C91D3"
+    },
+    {
+        "title": "Go Girl! Run!",
+        "feed": "http://1bmnl3g.podcaster.de/gogirlrun.rss",
+        "website": "https://gogirlrun.de/",
+        "bgcolor": "#A4406C"
+    },
+    {
+        "title": "Achim Achilles",
+        "feed": "http://feeds.soundcloud.com/users/soundcloud:users:1420895/sounds.rss",
+        "website": "https://www.achim-achilles.de/",
+        "bgcolor": "#AD2D3A"
+    },
+    {
+        "title": "Laufcast",
+        "feed": "http://laufcast.de/feed/aac/",
+        "website": "http://laufcast.de/",
+        "bgcolor": "#759526"
+    },
+    {
+        "title": "Wechselzone",
+        "feed": "http://feeds.feedburner.com/Wechselzonepodcast",
+        "website": "https://wechselzonepodcast.wordpress.com/",
+        "bgcolor": "#D4876E"
+    },
+    {
+        "title": "Pacemaker",
+        "feed": "https://shuru.de/feed/pacemaker-mp3/",
+        "website": "https://shuru.de/pacemaker/",
+        "bgcolor": "#DB473F"
+    }
+]

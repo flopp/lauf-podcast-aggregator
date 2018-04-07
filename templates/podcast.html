@@ -1,0 +1,64 @@
+{% extends "base.html" %}
+{% block title %}Lauf Podcasts - {{podcast.title}}{% endblock %}
+{% block content %}
+<div class="container bg-secondary">
+    <div class="row">
+        <div class="col-md-auto">
+             <a class="btn btn-link text-white" href="../index.html" role="button"><i class="fas fa-arrow-left"></i>&nbsp;Alle Podcasts</a>
+        </div>
+    </div>
+</div>
+<div class="container bg-light p-4">
+    <div class="row">
+        <div class="col-md-auto">
+            <img width="256px" height="256px" src="cover.jpg">
+        </div>
+        <div class="col">
+            <h1>{{podcast.title}}</h1>
+            <div class="row podcast-description">
+                <div class="col-md-12">
+                    {{podcast.data.description_formatted}}
+                </div>
+            </div>
+            <div class="row podcast-buttons">
+                <div class="col-md-auto">
+                    <script>
+                        window.podcastData = {
+                            "title": "{{podcast.title}}",
+                            "cover": "./cover.jpg",
+                            "feeds": [{"type": "audio", "format": "mp3", "url": "{{podcast.feed}}"}]
+                        };
+                    </script>
+                    <script class="podlove-subscribe-button" src="https://cdn.podlove.org/subscribe-button/javascripts/app.js" data-language="de" data-size="big" data-json-data="podcastData" data-color="#469cd1" data-format="rectangle" data-style="filled"></script>
+                </div>
+                <div class="col-md-auto">
+                    <a class="btn btn-primary podcast-button" href="{{podcast.website}}" target="_blank" role="button"><i class="fas fa-globe"></i> Webseite</a>
+                </div>
+                <div class="col-md-auto">
+                    <a class="btn btn-primary podcast-button" href="{{podcast.feed}}" target="_blank"  role="button"><i class="fas fa-rss"></i>&nbsp;Feed</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container pt-4">
+    <div class="row">
+        {% for e in episodes %}
+        <div class="col-md-12">
+            <div class="card mb-4 box-shadow">
+                <div class="card-body">
+                    <h5 class="card-title">{{e.title}}</h5>
+                    <p class="card-text">
+                        <i class="far fa-calendar-alt"></i> {{e.published|timestamp2date}}<br />
+                        <i class="far fa-clock"></i> {{e.total_time|formatseconds}}<br />
+                        <i class="fas fa-link"></i> <a href="{{e.link}}" target="_blank">{{e.link}}</a><br />
+                        <hr />
+                        {{e.description_formatted}}
+                    </p>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}
