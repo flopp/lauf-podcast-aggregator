@@ -39,6 +39,8 @@ class Aggregator:
         return d.strftime('%F %T')
 
     def format_seconds(self, value):
+        if value == 0:
+            return 'n/a'
         d = datetime.timedelta(seconds=value)
         return str(d)
 
@@ -61,7 +63,7 @@ class Aggregator:
             feed_file = '{}/feed'.format(dir)
             podcast['feed_file'] = feed_file
             os.makedirs(dir, exist_ok=True)
-            self._downloader.add_job(feed_url, feed_file)
+            self._downloader.add_job(feed_url, feed_file, force=True)
         self._downloader.run()
         # filter podcasts with non-existent feed file
         self._podcasts = [p for p in self._podcasts if os.path.exists(p['feed_file'])]

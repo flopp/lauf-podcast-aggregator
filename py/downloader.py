@@ -14,8 +14,8 @@ class Downloader:
         self._user_agent = user_agent
         self._jobs = []
 
-    def add_job(self, url, target_file):
-        self._jobs.append((url, target_file))
+    def add_job(self, url, target_file, force=False):
+        self._jobs.append((url, target_file, force))
 
     def run(self):
         pool = multiprocessing.Pool(self._threads)
@@ -26,8 +26,8 @@ class Downloader:
                 print(msg)
         self._jobs = []
 
-    def download_if_not_exists(self, url, target):
-        if not os.path.exists(target):
+    def download_if_not_exists(self, url, target, force):
+        if force or not os.path.exists(target):
             try:
                 response = requests.get(url, headers={'User-agent': self._user_agent})
                 dir = os.path.dirname(target)
