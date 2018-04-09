@@ -19,7 +19,7 @@ class Aggregator:
         self._downloader = Downloader(4, "Lauf Podcast Aggregator, lauf-podcasts@flopp.net")
         self._imagescaler = ImageScaler(4)
         self._podcasts_json_file = podcasts_json
-        self._raw_data_dir = cache_dir
+        self._cache_dir = cache_dir
         self._export_dir = export_dir
         self._base_url = base_url
         self._podcasts = []
@@ -43,8 +43,8 @@ class Aggregator:
         return str(d)
 
     def clear_cache(self):
-        if os.path.isdir(self.cache_dir):
-            shutil.rmtree(self.cache_dir)
+        if os.path.isdir(self._cache_dir):
+            shutil.rmtree(self._cache_dir)
 
     def sync(self):
         with open(self._podcasts_json_file, 'r') as f:
@@ -56,7 +56,7 @@ class Aggregator:
             feed_url = podcast['feed']
             sanitized_title = self.sanitize(title)
             podcast['sanitized_title'] = sanitized_title
-            dir = '{}/{}'.format(self._raw_data_dir, sanitized_title)
+            dir = '{}/{}'.format(self._cache_dir, sanitized_title)
             podcast['raw_dir'] = dir
             feed_file = '{}/feed'.format(dir)
             podcast['feed_file'] = feed_file
@@ -87,7 +87,7 @@ class Aggregator:
             if not cover_url and ('cover_url' in podcast['data']):
                 cover_url = podcast['data']['cover_url']
             if cover_url:
-                dir = '{}/{}'.format(self._raw_data_dir, podcast['sanitized_title'])
+                dir = '{}/{}'.format(self._cache_dir, podcast['sanitized_title'])
                 cover_file = '{}/cover'.format(dir)
                 self._downloader.add_job(cover_url, cover_file)
         self._downloader.run()
@@ -98,7 +98,7 @@ class Aggregator:
     def export(self):
         for podcast in self._podcasts:
             self._imagescaler.add_job(
-                '{}/{}/cover'.format(self._raw_data_dir, podcast['sanitized_title']),
+                '{}/{}/cover'.format(self._cache_dir, podcast['sanitized_title']),
                 '{}/{}/cover.jpg'.format(self._export_dir, podcast['sanitized_title']),
                 512)
         self._imagescaler.run()
