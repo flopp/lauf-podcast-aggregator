@@ -40,6 +40,12 @@
             width: 180px;
         }
 
+        .podcast-header {
+            border: 1px solid rgba(0,0,0,.125);
+            border-radius: 0 0 .25rem .25rem;
+            background-color: #fff;
+        }
+
         .podcast-description {
             min-height: 146px;
         }
@@ -86,7 +92,7 @@
         </nav>
     </header>
 
-    <main>
+    <main class="bg-light">
         {% block content %}
         {% endblock %}
     </main>
