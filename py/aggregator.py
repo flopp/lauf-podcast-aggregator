@@ -16,7 +16,7 @@ from podcastparser_patched import parse as podcastparser_parse
 
 class Aggregator:
     def __init__(self, podcasts_json, cache_dir, export_dir, templates_dir, base_url):
-        self._downloader = Downloader(4, "Lauf Podcast Aggregator, lauf-podcasts@flopp.net")
+        self._downloader = Downloader(4, "Lauf Podcast Aggregator, https://lauf-podcasts.flopp.net/")
         self._imagescaler = ImageScaler(4)
         self._podcasts_json_file = podcasts_json
         self._cache_dir = cache_dir
