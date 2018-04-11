@@ -96,5 +96,11 @@
         "title": "Laufen im Münsterland",
         "feed": "http://feeds.soundcloud.com/users/soundcloud:users:342415108/sounds.rss",
         "website": "https://soundcloud.com/laufen-im-muensterland"
+    },
+    {
+        "title": "Schmittcast",
+        "feed": "http://frauschmitt.podspot.de/rss",
+        "website": "http://www.laufen-mit-frauschmitt.de",
+        "cover_url": "http://www.laufen-mit-frauschmitt.de/wp-content/woo_uploads/68-header_illu4.jpg"
     }
 ]
