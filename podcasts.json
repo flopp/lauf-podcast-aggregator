@@ -102,5 +102,22 @@
         "feed": "http://frauschmitt.podspot.de/rss",
         "website": "http://www.laufen-mit-frauschmitt.de",
         "cover_url": "http://www.laufen-mit-frauschmitt.de/wp-content/woo_uploads/68-header_illu4.jpg"
+    },
+    {
+        "title": "Laufend Entdecken",
+        "feed": "http://laufendentdecken-podcast.at/feed/podcast/",
+        "website": "http://laufendentdecken-podcast.at/"
+    },
+    {
+        "title": "Endurange - Neues aus der Enducave",
+        "feed": "https://www.endurange.com/feed/podcast",
+        "website": "https://www.endurange.com/"
+    },
+    {
+        "title": "TRAILTIGER - Cat Content",
+        "feed": "https://trailtiger.wordpress.com/category/catcontent/feed/",
+        "website": "https://trailtiger.wordpress.com/",
+        "cover_url": "https://trailtiger.files.wordpress.com/2016/01/logo.png?w=512&h=512"
     }
+    
 ]
