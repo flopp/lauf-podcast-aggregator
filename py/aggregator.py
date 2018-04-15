@@ -48,7 +48,7 @@ class Aggregator:
         if os.path.isdir(self._cache_dir):
             shutil.rmtree(self._cache_dir)
 
-    def sync(self):
+    def sync(self, keep_feeds=False):
         with open(self._podcasts_json_file, 'r') as f:
             self._podcasts = json.load(f)
         # filter podcasts without title or feed url
@@ -63,7 +63,7 @@ class Aggregator:
             feed_file = '{}/feed'.format(dir)
             podcast['feed_file'] = feed_file
             os.makedirs(dir, exist_ok=True)
-            self._downloader.add_job(feed_url, feed_file, force=True)
+            self._downloader.add_job(feed_url, feed_file, force=(not keep_feeds))
         self._downloader.run()
         # filter podcasts with non-existent feed file
         self._podcasts = [p for p in self._podcasts if os.path.exists(p['feed_file'])]

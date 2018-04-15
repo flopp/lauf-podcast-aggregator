@@ -19,6 +19,7 @@ def main():
     args_parser.add_argument('--base-url', dest='base_url', metavar='URL', type=str)
     args_parser.add_argument('--podcasts-json', dest='podcasts_json', metavar='FILE', type=str, default='../podcasts.json')
     args_parser.add_argument('--clear-cache', dest='clear_cache', action='store_true')
+    args_parser.add_argument('--keep-feeds', dest='keep_feeds', action='store_true')
     args = args_parser.parse_args()
 
     a = Aggregator(
@@ -29,7 +30,7 @@ def main():
         base_url=args.base_url if args.base_url else 'file://{}'.format(os.path.abspath(args.export_dir)))
     if args.clear_cache:
         a.clear_cache()
-    a.sync()
+    a.sync(keep_feeds=args.keep_feeds)
     a.export()
 
 
