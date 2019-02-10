@@ -68,34 +68,38 @@ class Aggregator:
         # filter podcasts with non-existent feed file
         self._podcasts = [p for p in self._podcasts if os.path.exists(p['feed_file'])]
         for podcast in self._podcasts:
+            podcast['skip'] = False
             feed_url = podcast['feed']
             feed_file = podcast['feed_file']
             try:
                 with open(feed_file, 'r') as f:
                     podcast['data'] = podcastparser_parse(feed_url, f)
-                # determine latest publish date
-                last_publish = None
-                for episode in podcast['data']['episodes']:
-                    if not last_publish or episode['published'] > last_publish:
-                        last_publish = episode['published']
-                podcast['last_publish'] = last_publish
-                # format descriptions
-                podcast['data']['description_formatted'] = self.format_description(podcast['data']['description'])
-                for episode in podcast['data']['episodes']:
-                    episode['description_formatted'] = self.format_description(episode['description'])
-                # determine cover image
-                cover_url = None
-                if 'cover_url' in podcast:
-                    cover_url = podcast['cover_url']
-                if not cover_url and ('cover_url' in podcast['data']):
-                    cover_url = podcast['data']['cover_url']
-                if cover_url:
-                    dir = '{}/{}'.format(self._cache_dir, podcast['sanitized_title'])
-                    cover_file = '{}/cover'.format(dir)
-                    self._downloader.add_job(cover_url, cover_file)
             except Exception as e:
-                print('{}\n{}'.format(feed_url, e))
+                podcast['skip'] = True
+                continue    
+            # determine latest publish date
+            last_publish = None
+            for episode in podcast['data']['episodes']:
+                if not last_publish or episode['published'] > last_publish:
+                    last_publish = episode['published']
+            podcast['last_publish'] = last_publish
+            # format descriptions
+            podcast['data']['description_formatted'] = self.format_description(podcast['data']['description'])
+            for episode in podcast['data']['episodes']:
+                episode['description_formatted'] = self.format_description(episode['description'])
+            # determine cover image
+            cover_url = None
+            if 'cover_url' in podcast:
+                cover_url = podcast['cover_url']
+            if not cover_url and ('cover_url' in podcast['data']):
+                cover_url = podcast['data']['cover_url']
+            if cover_url:
+                dir = '{}/{}'.format(self._cache_dir, podcast['sanitized_title'])
+                cover_file = '{}/cover'.format(dir)
+                self._downloader.add_job(cover_url, cover_file)
         self._downloader.run()
+        # filter podcasts with skip attribute
+        self._podcasts = [p for p in self._podcasts if not p['skip']]
 
     def format_description(self, description):
         return '<br />'.join(description.split('\n'))

@@ -118,5 +118,29 @@
         "feed": "https://trailtiger.wordpress.com/category/catcontent/feed/",
         "website": "https://trailtiger.wordpress.com/",
         "cover_url": "https://trailtiger.files.wordpress.com/2016/01/logo.png?w=512&h=512"
+    },
+    {
+        "title": "Laufmasche",
+        "feed": "https://laufmasche.podigee.io/feed/mp3",
+        "website": "https://laufmasche.podigee.io/",
+        "cover_url": "https://images.podigee.com/400x,sSdj7j1qWj6ZLLPNiT94GiIdUAdf4rv_Zr0iMEI69GlM=/https://cdn.podigee.com/uploads/u1830/bcdcc540-0afe-49dc-a38f-f9a569715ebb.jpg"
+    },
+    {
+        "title": "Schneckentempo",
+        "feed": "https://schneckentempo.podbean.com/feed.xml",
+        "website": "https://schneckentempo.podbean.com/",
+        "cover_url": "https://pbcdn1.podbean.com/imglogo/image-logo/3778118/schneckentempo.jpg"
+    },
+    {
+        "title": "Was läuft?",
+        "feed": "https://podcast.happywesternhorse.de/feed/podcast/",
+        "website": "https://podcast.happywesternhorse.de/",
+        "cover_url": "https://podcast.happywesternhorse.de/wp-content/uploads/2018/05/Titelbild-final-300x300.jpg"
+    },
+    {
+        "title": "rennSandale",
+        "feed": "http://www.rennsandale.de/feed/mp3/",
+        "website": "http://www.rennsandale.de/",
+        "cover_url": "http://www.rennsandale.de/wp-content/uploads/2019/02/cropped-logo_600x600-1.jpg"
     }
 ]
