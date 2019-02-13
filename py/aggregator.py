@@ -83,6 +83,10 @@ class Aggregator:
                 if not last_publish or episode['published'] > last_publish:
                     last_publish = episode['published']
             podcast['last_publish'] = last_publish
+            if last_publish is None:
+                print('no last publish date: {}'.format(podcast['title']))
+                podcast['skip'] = True
+                continue
             # format descriptions
             podcast['data']['description_formatted'] = self.format_description(podcast['data']['description'])
             for episode in podcast['data']['episodes']:
