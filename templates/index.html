@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-{% block title %}Lauf Podcasts{% endblock %}
+{% block title %}Liste deutschsprachiger Lauf Podcasts | Lauf Podcasts{% endblock %}
 {% block content %}
 <div class="container podcast-header box-shadow p-4">
 <h1>Lauf Podcasts</h1>
@@ -15,7 +15,7 @@ Dies ist eine manuell kuratierte Liste von deutschsprachigen Podcasts, die sich 
 </div>
 <div class="container pt-4">
     <div class="row">
-        {% for p in podcasts|sort(attribute='last_publish', reverse=True) %}
+        {% for p in podcasts %}
         <div class="col-md-4">
             <div class="card mb-4 box-shadow">
                 <a href="{{p.sanitized_title}}/index.html">

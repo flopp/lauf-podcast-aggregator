@@ -29,7 +29,9 @@
                             "feeds": [{"type": "audio", "format": "mp3", "url": "{{podcast.feed}}"}]
                         };
                     </script>
+                    <!--
                     <script class="podlove-subscribe-button" src="https://cdn.podlove.org/subscribe-button/javascripts/app.js" data-language="de" data-size="big" data-json-data="podcastData" data-color="#007bff" data-format="rectangle" data-style="filled"></script>
+                    -->
                 </div>
                 <div class="col-md-auto">
                     <a class="btn btn-primary podcast-button" href="{{podcast.website}}" target="_blank" role="button"><i class="fas fa-globe"></i> Webseite</a>
@@ -54,13 +56,20 @@
                 <div class="card-body">
                     <h5 class="card-title">{{e.title}}</h5>
                     <p class="card-text">
-                        <i class="far fa-calendar-alt"></i> {{e.published|timestamp2date}}<br />
-                        <i class="far fa-clock"></i> {{e.total_time|formatseconds}}<br />
-                        <i class="fas fa-link"></i> <a href="{{e.link}}" target="_blank">{{e.link}}</a><br />
-                        <hr />
                         {{e.description_formatted}}
                     </p>
                 </div>
+                <div class="card-footer text-muted">
+                    <i class="far fa-calendar-alt"></i>&nbsp;{{e.published|timestamp2date}}
+                    <i class="far fa-clock"></i>&nbsp;{{e.total_time|formatseconds}}<br />
+                    <i class="fas fa-link"></i>&nbsp;<a href="{{e.link}}" target="_blank">{{e.link}}</a>
+                </div>
+            </div>
+        </div>
+        {% else %}
+        <div class="col-md-12">
+            <div class="alert alert-danger box-shadow" role="alert">
+                Hmmm. Keine Episoden gefunden :(
             </div>
         </div>
         {% endfor %}

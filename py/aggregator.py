@@ -31,14 +31,20 @@ class Aggregator:
         self._jinja.globals['base_url'] = base_url
 
     def format_date(self, value):
+        if value is None:
+            return 'n/a'
         d = datetime.datetime.fromtimestamp(value)
         return d.strftime('%F')
 
     def format_datetime(self, value):
+        if value is None:
+            return 'n/a'
         d = datetime.datetime.fromtimestamp(value)
         return d.strftime('%F %T')
 
     def format_seconds(self, value):
+        if value is None:
+            return 'n/a'
         if value == 0:
             return 'n/a'
         d = datetime.timedelta(seconds=value)
@@ -85,8 +91,6 @@ class Aggregator:
             podcast['last_publish'] = last_publish
             if last_publish is None:
                 print('no last publish date: {}'.format(podcast['title']))
-                podcast['skip'] = True
-                continue
             # format descriptions
             podcast['data']['description_formatted'] = self.format_description(podcast['data']['description'])
             for episode in podcast['data']['episodes']:
@@ -104,6 +108,8 @@ class Aggregator:
         self._downloader.run()
         # filter podcasts with skip attribute
         self._podcasts = [p for p in self._podcasts if not p['skip']]
+        # sort by reversed 'last_publish' timestamp
+        self._podcasts.sort(key=lambda x: -x['last_publish'] if x['last_publish'] is not None else 0)
 
     def format_description(self, description):
         return '<br />'.join(description.split('\n'))
