@@ -1,5 +1,6 @@
 {% extends "base.html" %}
 {% block title %}{{podcast.title}} | Lauf Podcasts{% endblock %}
+{% block canonical %}<link rel="canonical" href="https://lauf-podcasts.flopp.net/{{podcast.sanitized_title}}/" />{% endblock %}
 {% block content %}
 <div class="container bg-secondary">
     <div class="row">
