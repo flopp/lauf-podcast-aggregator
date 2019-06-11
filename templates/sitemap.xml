@@ -1,0 +1,18 @@
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>https://lauf-podcasts.flopp.net/index.html</loc>
+        <lastmod>{{now|timestamp2date}}</lastmod>
+    </url>
+    <url>
+        <loc>https://lauf-podcasts.flopp.net/info.html</loc>
+    </url>
+    <url>
+        <loc>https://lauf-podcasts.flopp.net/impressum.html</loc>
+    </url>
+{% for p in podcasts %}    
+    <url>
+        <loc>https://lauf-podcasts.flopp.net/{{p.sanitized_title}}/index.html</loc>
+        <lastmod>{{p.last_publish|timestamp2date}}</lastmod>
+    </url>
+{% endfor %}
+</urlset>

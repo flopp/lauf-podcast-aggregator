@@ -124,6 +124,7 @@ class Aggregator:
         self.export_info()
         self.export_impressum()
         self.export_index()
+        self.export_sitemap()
         for podcast in self._podcasts:
             self.export_podcast(podcast)
         self._imagescaler.run()
@@ -146,6 +147,12 @@ class Aggregator:
             template = self._jinja.get_template('index.html')
             f.write(template.render(podcasts=self._podcasts))
 
+    def export_sitemap(self):
+        os.makedirs(self._export_dir, exist_ok=True)
+        with open('{}/sitemap.xml'.format(self._export_dir), 'w') as f:
+            template = self._jinja.get_template('sitemap.xml')
+            f.write(template.render(podcasts=self._podcasts))
+        
     def export_podcast(self, podcast):
         dir = '{}/{}'.format(self._export_dir, podcast['sanitized_title'])
         os.makedirs(dir, exist_ok=True)
