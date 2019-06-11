@@ -52,9 +52,9 @@
         "website": "https://trailgierig.com/"
     },
     {
-        "title": "Trailrunning Podcast by Trailrunnersdog",
-        "feed": "https://www.trailrunning-podcast.de/feed/mp3",
-        "website": "https://www.trailrunning-podcast.de/"
+        "title": "Trail Running & Endurance Podcast",
+        "feed": "https://www.trailrunnersdog.de/feed/mp3/",
+        "website": "https://www.trailrunnersdog.de/trailrunning-podcast/"
     },
     {
         "title": "Go Girl! Run!",
@@ -62,9 +62,9 @@
         "website": "https://gogirlrun.de/"
     },
     {
-        "title": "Achim Achilles",
-        "feed": "http://feeds.soundcloud.com/users/soundcloud:users:1420895/sounds.rss",
-        "website": "https://www.achim-achilles.de/"
+        "title": "Achilles Running Podcast",
+        "feed": "https://achilles-podcast.podigee.io/feed/aac",
+        "website": "https://achilles-podcast.podigee.io/"
     },
     {
         "title": "Laufcast",
@@ -142,5 +142,25 @@
         "feed": "http://www.rennsandale.de/feed/mp3/",
         "website": "http://www.rennsandale.de/",
         "cover_url": "http://www.rennsandale.de/wp-content/uploads/2019/02/cropped-logo_600x600-1.jpg"
+    },
+    {
+        "title": "Runner's World",
+        "feed": "https://hearthis.at/runners-world/podcast/",
+        "website": "https://www.runnersworld.de/podcast"
+    },
+    {
+        "title": "runskills",
+        "feed": "https://spe02e.podcaster.de/runskills-community.rss",
+        "website": "https://www.runskills.de/"
+    },
+    {
+        "title": "narathon - von 0 auf 21",
+        "feed": "https://1l4swt6.podcaster.de/narathon.rss",
+        "website": "https://www.podcast.de/podcast/617979/"
+    },
+    {
+        "title": "#Läuft - der Laufpodcast",
+        "feed": "https://anchor.fm/s/85c1234/podcast/rss",
+        "website": "https://www.hashtaglaeuft.de/"
     }
 ]
