@@ -3,5 +3,5 @@ __pycache__
 .cache
 .export
 .idea
-env
 .vscode
+venv
