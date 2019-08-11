@@ -162,5 +162,10 @@
         "title": "#Läuft - der Laufpodcast",
         "feed": "https://anchor.fm/s/85c1234/podcast/rss",
         "website": "https://www.hashtaglaeuft.de/"
+    },
+    {
+        "title": "Mainathlet - Der Leichtathletik Podcast",
+        "feed": "https://pinecast.com/feed/mainathlet",
+        "website": "https://www.mainathlet.de/"
     }
 ]
