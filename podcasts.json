@@ -167,5 +167,15 @@
         "title": "Mainathlet - Der Leichtathletik Podcast",
         "feed": "https://pinecast.com/feed/mainathlet",
         "website": "https://www.mainathlet.de/"
+    },
+    {
+        "title": "LULTRAS – LOVE SPORTS",
+        "feed": "https://www.ausdauer-coaches.de/feed/mp3/",
+        "website": "https://www.ausdauer-coaches.de/podcast-lultras-love-sports/"
+    },
+    {
+        "title": "Vape and Run - Rennen statt Rauchen.",
+        "feed": "http://12z6nyq.podcaster.de/vapeandrun.rss",
+        "website": "http://vape-and-run.de/"
     }
 ]
