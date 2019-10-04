@@ -11,7 +11,7 @@ import re
 import shutil
 from downloader import Downloader
 from imagescaler import ImageScaler
-from podcastparser_patched import parse as podcastparser_parse
+from podcastparser import parse as podcastparser_parse
 
 
 class Aggregator:
