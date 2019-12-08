@@ -177,5 +177,10 @@
         "title": "Vape and Run - Rennen statt Rauchen.",
         "feed": "http://12z6nyq.podcaster.de/vapeandrun.rss",
         "website": "http://vape-and-run.de/"
+    },
+    {
+        "title": "Run Fiction Podcast",
+        "feed": "http://feeds.soundcloud.com/users/soundcloud:users:739060675/sounds.rss",
+        "website": "https://soundcloud.com/user-514784606/"
     }
 ]
