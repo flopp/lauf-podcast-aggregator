@@ -182,5 +182,10 @@
         "title": "Run Fiction Podcast",
         "feed": "http://feeds.soundcloud.com/users/soundcloud:users:739060675/sounds.rss",
         "website": "https://soundcloud.com/user-514784606/"
+    },
+    {
+        "title": "M&M's on Tour - Der Laufpodcast",
+        "feed": "https://jebmzw.podcaster.de/MMs-on-Tour-Der-Laufpodcast.rss",
+        "website": "https://www.podcast.de/podcast/740748/"
     }
 ]
