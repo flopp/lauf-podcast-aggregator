@@ -1,7 +1,7 @@
 .PHONY: setup format run
 
 setup:
-	python3 -m venv venv
+	python3.7 -m venv venv
 	./venv/bin/pip install --upgrade pip
 	./venv/bin/pip install --upgrade -r requirements.txt
 	./venv/bin/pip install --upgrade -r requirements-dev.txt
