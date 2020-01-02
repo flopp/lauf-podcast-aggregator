@@ -130,7 +130,14 @@ class Aggregator:
         )
 
     def format_description(self, description: str) -> str:
-        return "<br />".join(description.split("\n"))
+        re_newline = re.compile(r"(\n)")
+        re_divider = re.compile(r"((?:---+)|(?:\*\*\*+)|(?:\+\+\++))")
+        re_link = re.compile(r"(https?://[A-Za-z0-9/.=\?&_\-]+)")
+        s = description
+        s = re_newline.sub(r"<br />", s)
+        s = re_divider.sub(r"<br />\1<br />", s)
+        s = re_link.sub(r'<a href="\1" rel="nofollow" target="_blank">\1</a>', s)
+        return s
 
     def export(self) -> None:
         for podcast in self._podcasts:
