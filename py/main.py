@@ -8,23 +8,23 @@
 
 import argparse
 import os
-from .aggregator import Aggregator
+from aggregator import Aggregator
 
 
 def main() -> None:
     args_parser = argparse.ArgumentParser()
     args_parser.add_argument(
-        "--cache-dir", dest="cache_dir", metavar="DIR", type=str, default="../.cache"
+        "--cache-dir", dest="cache_dir", metavar="DIR", type=str, default=".cache"
     )
     args_parser.add_argument(
-        "--export-dir", dest="export_dir", metavar="DIR", type=str, default="../.export"
+        "--export-dir", dest="export_dir", metavar="DIR", type=str, default=".export"
     )
     args_parser.add_argument(
         "--templates-dir",
         dest="templates_dir",
         metavar="DIR",
         type=str,
-        default="../.templates",
+        default="templates",
     )
     args_parser.add_argument("--base-url", dest="base_url", metavar="URL", type=str)
     args_parser.add_argument(
@@ -32,7 +32,7 @@ def main() -> None:
         dest="podcasts_json",
         metavar="FILE",
         type=str,
-        default="../podcasts.json",
+        default="podcasts.json",
     )
     args_parser.add_argument("--clear-cache", dest="clear_cache", action="store_true")
     args_parser.add_argument("--keep-feeds", dest="keep_feeds", action="store_true")

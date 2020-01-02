@@ -11,8 +11,8 @@ import re
 import shutil
 from typing import Any, Dict, List, Optional
 from podcastparser import parse as podcastparser_parse  # type: ignore
-from .downloader import Downloader
-from .imagescaler import ImageScaler
+from downloader import Downloader
+from imagescaler import ImageScaler
 
 
 class Aggregator:

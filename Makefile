@@ -10,10 +10,10 @@ format:
 	venv/bin/black py/*.py
 
 lint:
-	venv/bin/black  --check              py/*.py
+	venv/bin/black --check py/*.py
 	venv/bin/flake8 --max-line-length=90 py/*.py
-	venv/bin/bandit --quiet              py/*.py
-	venv/bin/mypy   --strict             py/*.py
+	venv/bin/bandit --quiet py/*.py
+	MYPYPATH=py venv/bin/mypy --strict py/*.py
 
 run: setup
 	./venv/bin/python py/main.py \
