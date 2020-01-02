@@ -1,9 +1,17 @@
-.PHONY: setup run
+.PHONY: setup format run
 
 setup:
 	python3 -m venv venv
 	./venv/bin/pip install --upgrade pip
-	./venv/bin/pip install -r requirements.txt
+	./venv/bin/pip install --upgrade -r requirements.txt
+	./venv/bin/pip install --upgrade -r requirements-dev.txt
+
+format:
+	venv/bin/black py/*.py
+
+lint:
+	venv/bin/black --check  py/*.py
+	venv/bin/mypy  --strict py/*.py
 
 run: setup
 	./venv/bin/python py/main.py \

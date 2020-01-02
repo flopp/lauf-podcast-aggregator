@@ -5,22 +5,23 @@
 
 import multiprocessing
 import os
-from PIL import Image, ImageFilter
+from typing import Dict, List, Tuple
+from PIL import Image, ImageFilter  # type: ignore
 
 
 class ImageScaler:
-    def __init__(self, threads):
+    def __init__(self, threads: int):
         self._threads = threads
-        self._jobs = []
-        self._blur_filters = {}
+        self._jobs: List[Tuple[str, str, int]] = []
+        self._blur_filters: Dict[int, ImageFilter.GaussianBlur] = {}
 
-    def add_job(self, source_file, target_file, max_dim):
-        blur_size = int(max_dim/16)
+    def add_job(self, source_file: str, target_file: str, max_dim: int) -> None:
+        blur_size = int(max_dim / 16)
         if blur_size not in self._blur_filters:
             self._blur_filters[blur_size] = ImageFilter.GaussianBlur(blur_size)
         self._jobs.append((source_file, target_file, max_dim))
 
-    def run(self):
+    def run(self) -> None:
         pool = multiprocessing.Pool(self._threads)
         results = [pool.apply_async(self._execute_scale_job, j) for j in self._jobs]
         for r in results:
@@ -29,7 +30,9 @@ class ImageScaler:
                 print(msg)
         self._jobs = []
 
-    def _execute_scale_job(self, source_file, target_file, max_dim):
+    def _execute_scale_job(
+        self, source_file: str, target_file: str, max_dim: int
+    ) -> Tuple[bool, str]:
         if os.path.exists(target_file):
             return True, "SCALING: cache hit {0}".format(target_file)
         if not os.path.exists(source_file):
@@ -38,18 +41,20 @@ class ImageScaler:
         os.makedirs(dir, exist_ok=True)
         return self._scale_image(source_file, target_file, max_dim)
 
-    def _scale_image(self, source_file, target_file, max_dim):
-        blur_size = int(max_dim/16)
-        assert(blur_size in self._blur_filters)
+    def _scale_image(
+        self, source_file: str, target_file: str, max_dim: int
+    ) -> Tuple[bool, str]:
+        blur_size = int(max_dim / 16)
+        assert blur_size in self._blur_filters
         # noinspection PyBroadException
         try:
             with open(source_file, "rb") as f:
                 image = Image.open(f)
                 (w, h) = image.size
                 if min(w, h) == 0:
-                    return False, 'SCALING: failed; empty image {0}'.format(source_file)
+                    return False, "SCALING: failed; empty image {0}".format(source_file)
 
-                image_rgb = Image.new('RGB', (w, h))
+                image_rgb = Image.new("RGB", (w, h))
                 image_rgb.paste(image, (0, 0))
                 image = image_rgb
 
@@ -63,14 +68,23 @@ class ImageScaler:
                     big_h = int((h * max_dim) / w)
 
                 image_small = image.resize((small_w, small_h), Image.ANTIALIAS)
-                image_big = image.resize((big_w, big_h), Image.ANTIALIAS)\
-                    .filter(self._blur_filters[blur_size])
-                base = Image.new('RGB', (max_dim, max_dim))
-                base.paste(image_big, (int((max_dim - big_w)/2), int((max_dim - big_h)/2)))
-                base.paste(image_small, (int((max_dim - small_w)/2), int((max_dim - small_h)/2)))
+                image_big = image.resize((big_w, big_h), Image.ANTIALIAS).filter(
+                    self._blur_filters[blur_size]
+                )
+                base = Image.new("RGB", (max_dim, max_dim))
+                base.paste(
+                    image_big, (int((max_dim - big_w) / 2), int((max_dim - big_h) / 2))
+                )
+                base.paste(
+                    image_small,
+                    (int((max_dim - small_w) / 2), int((max_dim - small_h) / 2)),
+                )
                 base.save(target_file)
-                return True, 'SCALING: success {0} -> {1}'.format(source_file, target_file)
+                return (
+                    True,
+                    "SCALING: success {0} -> {1}".format(source_file, target_file),
+                )
         except IOError:
-            return False, 'SCALING: failed {0}'.format(source_file)
+            return False, "SCALING: failed {0}".format(source_file)
         except Exception as e:
-            return False, 'SCALING: failed2 {0}; exception: {1}'.format(source_file, e)
+            return False, "SCALING: failed2 {0}; exception: {1}".format(source_file, e)
