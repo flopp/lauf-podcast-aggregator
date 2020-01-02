@@ -45,7 +45,6 @@ class ImageScaler:
         self, source_file: str, target_file: str, max_dim: int
     ) -> Tuple[bool, str]:
         blur_size = int(max_dim / 16)
-        assert blur_size in self._blur_filters
         # noinspection PyBroadException
         try:
             with open(source_file, "rb") as f:

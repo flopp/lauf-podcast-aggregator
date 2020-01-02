@@ -1,2 +1,4 @@
+bandit
 black
+flake8
 mypy

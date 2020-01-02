@@ -33,7 +33,9 @@ class Aggregator:
         self._export_dir = export_dir
         self._base_url = base_url
         self._podcasts: List[Dict[str, Any]] = []
-        self._jinja = jinja2.Environment(loader=jinja2.FileSystemLoader(templates_dir))
+        self._jinja = jinja2.Environment(
+            loader=jinja2.FileSystemLoader(templates_dir), autoescape=True
+        )
         self._jinja.filters["timestamp2date"] = self.format_date
         self._jinja.filters["timestamp2datetime"] = self.format_datetime
         self._jinja.filters["formatseconds"] = self.format_seconds
@@ -90,7 +92,7 @@ class Aggregator:
             try:
                 with open(feed_file, "r") as f:
                     podcast["data"] = podcastparser_parse(feed_url, f)
-            except Exception as e:
+            except Exception:
                 podcast["skip"] = True
                 continue
             # determine latest publish date
