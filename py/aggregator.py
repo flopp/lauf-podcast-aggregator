@@ -9,6 +9,7 @@ import json
 import os
 import re
 import shutil
+from bs4 import BeautifulSoup  # type: ignore
 from typing import Any, Dict, List, Optional
 from podcastparser import parse as podcastparser_parse  # type: ignore
 from downloader import Downloader
@@ -135,15 +136,19 @@ class Aggregator:
         )
 
     def clean_html(self, html: str) -> str:
-        re_img = re.compile(r"(<img[^>]+>)")
-        s = html
-        s = re_img.sub("", s)
-        return s
+        soup = BeautifulSoup(html, features="html.parser")
+        for tag in soup():
+            for attribute in ["class", "id", "name", "style"]:
+                del tag[attribute]
+        for tag_name in ["audio", "figure", "iframe", "img", "script", "video"]:
+            for tag in soup(tag_name):
+                tag.decompose()
+        return str(soup)
 
     def format_description(self, description: str) -> str:
         re_newline = re.compile(r"(\n)")
         re_divider = re.compile(r"((?:---+)|(?:\*\*\*+)|(?:\+\+\++))")
-        re_link = re.compile(r"(https?://[A-Za-z0-9/.=\?&_\-]+)")
+        re_link = re.compile(r"(https?://[A-Za-z0-9/.=\?&%_\-]+)")
         s = description
         s = re_newline.sub(r"<br />", s)
         s = re_divider.sub(r"<br />\1<br />", s)
