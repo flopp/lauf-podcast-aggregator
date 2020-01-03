@@ -109,7 +109,9 @@ class Aggregator:
             )
             for episode in podcast["data"]["episodes"]:
                 if "description_html" in episode:
-                    episode["description_formatted"] =episode["description_html"]
+                    episode["description_formatted"] = self.clean_html(
+                        episode["description_html"]
+                    )
                 else:
                     episode["description_formatted"] = self.format_description(
                         episode["description"]
@@ -131,6 +133,12 @@ class Aggregator:
         self._podcasts.sort(
             key=lambda x: -x["last_publish"] if x["last_publish"] is not None else 0
         )
+
+    def clean_html(self, html: str) -> str:
+        re_img = re.compile(r"(<img[^>]+>)")
+        s = html
+        s = re_img.sub("", s)
+        return s
 
     def format_description(self, description: str) -> str:
         re_newline = re.compile(r"(\n)")
