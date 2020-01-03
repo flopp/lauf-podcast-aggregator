@@ -108,9 +108,12 @@ class Aggregator:
                 podcast["data"]["description"]
             )
             for episode in podcast["data"]["episodes"]:
-                episode["description_formatted"] = self.format_description(
-                    episode["description"]
-                )
+                if "description_html" in episode:
+                    episode["description_formatted"] =episode["description_html"]
+                else:
+                    episode["description_formatted"] = self.format_description(
+                        episode["description"]
+                    )
             # determine cover image
             cover_url = None
             if "cover_url" in podcast:
