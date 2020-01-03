@@ -187,5 +187,15 @@
         "title": "M&M's on Tour - Der Laufpodcast",
         "feed": "https://jebmzw.podcaster.de/MMs-on-Tour-Der-Laufpodcast.rss",
         "website": "https://www.podcast.de/podcast/740748/"
+    },
+    {
+        "title": "Laufen & Leben - Anna Hughes",
+        "feed": "https://12ck3od.podcaster.de/annachughes.rss",
+        "website": "http://annachughes.com/podcast/"
+    },
+    {
+        "title": "Endlich mehr Sport",
+        "feed": "https://ausdauerblog.podigee.io/feed/mp3",
+        "website": "https://www.ausdauerblog.de/podcast/"
     }
 ]
