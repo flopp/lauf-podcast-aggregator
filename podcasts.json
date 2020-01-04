@@ -197,5 +197,35 @@
         "title": "Endlich mehr Sport",
         "feed": "https://ausdauerblog.podigee.io/feed/mp3",
         "website": "https://www.ausdauerblog.de/podcast/"
+    },
+    {
+        "title": "Auslaufen Podcast",
+        "feed": "https://anchor.fm/s/23c1c28/podcast/rss",
+        "website": "http://auslaufen-podcast.de/"
+    },
+    {
+        "title": "lauf-faul.de Podcast",
+        "feed": "http://lauf-faul.de/feed/mp3/",
+        "website": "http://lauf-faul.de/"
+    },
+    {
+        "title": "xc-run.de Podcast",
+        "feed": "https://anchor.fm/s/f4dfea4/podcast/rss",
+        "website": "https://xc-run.de/themen/podcast/"
+    },
+    {
+        "title": "CrossCast - Der OCR Podcast",
+        "feed": "https://teamchriscross.de/feed/ocr/",
+        "website": "https://teamchriscross.de"
+    },
+    {
+        "title": "PACEPRESSO",
+        "feed": "https://anchor.fm/s/118e1bcc/podcast/rss",
+        "website": "https://anchor.fm/pacepresso"
+    },
+    {
+        "title": "So läuft es - Der Laufpodcast mit Peter Tauber & Mike Kleiß",
+        "feed": "https://so-laeuft-es.podigee.io/feed/mp3",
+        "website": "https://so-laeuft-es.podigee.io"
     }
 ]
