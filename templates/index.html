@@ -23,10 +23,14 @@ Dies ist eine manuell kuratierte Liste von deutschsprachigen Podcasts, die sich 
                     <img class="card-img-top" src="{{p.sanitized_title}}/cover.jpg">
                 </a>
                 <div class="card-body">
-                    <h5 class="card-title">{{p.title}}</h5>
+                    <h5 class="card-title">{{p.title}} </h5>
                     <p>
                         Letzte Episode: {{p.last_publish|timestamp2date}}
                     </p>
+
+                    {% if p.new %}
+                    <span class="badge badge-pill badge-success">Neu hinzugefügt</span>
+                    {% endif %}
                 </div>
             </div>
         </div>

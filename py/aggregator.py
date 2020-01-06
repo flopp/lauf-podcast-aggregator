@@ -81,6 +81,9 @@ class Aggregator:
             podcast["raw_dir"] = dir
             feed_file = "{}/feed".format(dir)
             podcast["feed_file"] = feed_file
+            added = datetime.datetime.strptime(podcast["added"], "%Y-%m-%d")
+            if added + datetime.timedelta(weeks=2) >= datetime.datetime.now():
+                podcast["new"] = 1
             os.makedirs(dir, exist_ok=True)
             self._downloader.add_job(feed_url, feed_file, force=(not keep_feeds))
         self._downloader.run()
