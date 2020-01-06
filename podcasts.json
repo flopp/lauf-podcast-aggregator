@@ -2,230 +2,274 @@
     {
         "title": "Vitamin Berge",
         "feed": "https://vitaminberge.de/feed/podcast/",
-        "website": "https://vitaminberge.de/"
+        "website": "https://vitaminberge.de/",
+        "added": "2018-04-07"
     },
     {
         "title": "Running Podcast",
         "feed": "http://www.running-podcast.de/feed/mp3/",
-        "website": "http://www.running-podcast.de/"
+        "website": "http://www.running-podcast.de/",
+        "added": "2018-04-07"
     },
     {
         "title": "Fat Boys Run",
         "feed": "http://www.fatboysrun.de/feed/podcast",
-        "website": "http://www.fatboysrun.de/"
+        "website": "http://www.fatboysrun.de/",
+        "added": "2018-04-07"
     },
     {
         "title": "Läuft Bei Mir",
         "feed": "http://www.fatboysrun.de/feed/lbm",
         "website": "https://www.michael-arend.de/lbm/",
-        "cover_url": "https://xomrw7.podcaster.de/laeuftbeimir/logos/podlogo.png"
+        "cover_url": "https://xomrw7.podcaster.de/laeuftbeimir/logos/podlogo.png",
+        "added": "2018-04-07"
     },
     {
         "title": "3 Schweinehunde",
         "feed": "https://3-schweinehun.de/episodes.mp3.rss",
-        "website": "https://3-schweinehun.de/"
+        "website": "https://3-schweinehun.de/",
+        "added": "2018-04-07"
     },
     {
         "title": "beVegt",
         "feed": "https://bevegt.libsyn.com/rss",
-        "website": "https://www.bevegt.de/"
+        "website": "https://www.bevegt.de/",
+        "added": "2018-04-07"
     },
     {
         "title": "LaufenLiebeErdnussbutter",
         "feed": "http://laufenliebeerdnussbutter.de/feed/podcast",
-        "website": "http://laufenliebeerdnussbutter.de/"
+        "website": "http://laufenliebeerdnussbutter.de/",
+        "added": "2018-04-07"
     },
     {
         "title": "Schnaufcast",
         "feed": "https://feed.informer.com/digests/6K4Y8IE7QF/feeder.rss",
         "website": "https://www.schnaufcast.de/",
-        "cover_url": "https://image.jimcdn.com/app/cms/image/transf/dimension=512x512:format=jpg/path/s45d3690c1c0a2505/image/i8a872ec9dc216267/version/1519633005/image.jpg"
+        "cover_url": "https://image.jimcdn.com/app/cms/image/transf/dimension=512x512:format=jpg/path/s45d3690c1c0a2505/image/i8a872ec9dc216267/version/1519633005/image.jpg",
+        "added": "2018-04-07"
     },
     {
         "title": "Schnaufwechsel",
         "feed": "http://schnaufwechsel.de/feed/",
-        "website": "http://schnaufwechsel.de/"
+        "website": "http://schnaufwechsel.de/",
+        "added": "2018-04-07"
     },
     {
         "title": "Trailgierig",
         "feed": "http://trailgierig.podspot.de/rss",
-        "website": "https://trailgierig.com/"
+        "website": "https://trailgierig.com/",
+        "added": "2018-04-07"
     },
     {
         "title": "Trail Running & Endurance Podcast",
         "feed": "https://www.trailrunnersdog.de/feed/mp3/",
-        "website": "https://www.trailrunnersdog.de/trailrunning-podcast/"
+        "website": "https://www.trailrunnersdog.de/trailrunning-podcast/",
+        "added": "2018-04-07"
     },
     {
         "title": "Go Girl! Run!",
         "feed": "http://1bmnl3g.podcaster.de/gogirlrun.rss",
-        "website": "https://gogirlrun.de/"
+        "website": "https://gogirlrun.de/",
+        "added": "2018-04-07"
     },
     {
         "title": "Achilles Running Podcast",
         "feed": "https://achilles-podcast.podigee.io/feed/aac",
-        "website": "https://achilles-podcast.podigee.io/"
+        "website": "https://achilles-podcast.podigee.io/",
+        "added": "2018-04-07"
     },
     {
         "title": "Laufcast",
         "feed": "http://laufcast.de/feed/aac/",
-        "website": "http://laufcast.de/"
+        "website": "http://laufcast.de/",
+        "added": "2018-04-07"
     },
     {
         "title": "Wechselzone",
         "feed": "http://feeds.feedburner.com/Wechselzonepodcast",
-        "website": "https://wechselzonepodcast.wordpress.com/"
+        "website": "https://wechselzonepodcast.wordpress.com/",
+        "added": "2018-04-07"
     },
     {
         "title": "Pacemaker",
         "feed": "https://shuru.de/feed/pacemaker-mp3/",
-        "website": "https://shuru.de/pacemaker/"
+        "website": "https://shuru.de/pacemaker/",
+        "added": "2018-04-07"
     },
     {
         "title": "Ultralaufen",
         "feed": "http://www.ultralaufen.de/podcast/feed/",
         "website": "http://www.ultralaufen.de/",
-        "cover_url": "https://is5-ssl.mzstatic.com/image/thumb/Music118/v4/0c/9a/aa/0c9aaa31-5378-e516-dd21-47953323b4c5/source/170x170bb.jpg"
+        "cover_url": "https://is5-ssl.mzstatic.com/image/thumb/Music118/v4/0c/9a/aa/0c9aaa31-5378-e516-dd21-47953323b4c5/source/170x170bb.jpg",
+        "added": "2018-04-09"
     },
     {
         "title": "lass laufen podcast",
         "feed": "http://feeds.soundcloud.com/users/soundcloud:users:283653386/sounds.rss",
-        "website": "https://soundcloud.com/user-396896339"
+        "website": "https://soundcloud.com/user-396896339",
+        "added": "2018-04-09"
     },
     {
         "title": "Laufen im Münsterland",
         "feed": "http://feeds.soundcloud.com/users/soundcloud:users:342415108/sounds.rss",
-        "website": "https://soundcloud.com/laufen-im-muensterland"
+        "website": "https://soundcloud.com/laufen-im-muensterland",
+        "added": "2018-04-09"
     },
     {
         "title": "Schmittcast",
         "feed": "http://frauschmitt.podspot.de/rss",
         "website": "http://www.laufen-mit-frauschmitt.de",
-        "cover_url": "http://www.laufen-mit-frauschmitt.de/wp-content/woo_uploads/68-header_illu4.jpg"
+        "cover_url": "http://www.laufen-mit-frauschmitt.de/wp-content/woo_uploads/68-header_illu4.jpg",
+        "added": "2018-04-11"
     },
     {
         "title": "Laufend Entdecken",
         "feed": "http://laufendentdecken-podcast.at/feed/podcast/",
-        "website": "http://laufendentdecken-podcast.at/"
+        "website": "http://laufendentdecken-podcast.at/",
+        "added": "2018-04-13"
     },
     {
         "title": "Endurange - Neues aus der Enducave",
         "feed": "https://www.endurange.com/feed/podcast",
-        "website": "https://www.endurange.com/"
+        "website": "https://www.endurange.com/",
+        "added": "2018-04-13"
     },
     {
         "title": "TRAILTIGER - Cat Content",
         "feed": "https://trailtiger.wordpress.com/category/catcontent/feed/",
         "website": "https://trailtiger.wordpress.com/",
-        "cover_url": "https://trailtiger.files.wordpress.com/2016/01/logo.png?w=512&h=512"
+        "cover_url": "https://trailtiger.files.wordpress.com/2016/01/logo.png?w=512&h=512",
+        "added": "2018-04-13"
     },
     {
         "title": "Laufmasche",
         "feed": "https://podcast.audiocon.de/rss/a81879fb1f31b83fa34ef6641e28171e882d24a5",
         "website": "https://www.podcastfabrik.de/podcasts/laufmasche/",
-        "cover_url": "https://www.podcastfabrik.de/fileadmin/_processed_/4/7/csm_Cover-Laufmasche-web_3a449cc2da.jpg"
+        "cover_url": "https://www.podcastfabrik.de/fileadmin/_processed_/4/7/csm_Cover-Laufmasche-web_3a449cc2da.jpg",
+        "added": "2019-02-10"
     },
     {
         "title": "Schneckentempo",
         "feed": "https://schneckentempo.podbean.com/feed.xml",
         "website": "https://schneckentempo.podbean.com/",
-        "cover_url": "https://pbcdn1.podbean.com/imglogo/image-logo/3778118/schneckentempo.jpg"
+        "cover_url": "https://pbcdn1.podbean.com/imglogo/image-logo/3778118/schneckentempo.jpg",
+        "added": "2019-02-10"
     },
     {
         "title": "Was läuft?",
         "feed": "https://podcast.happywesternhorse.de/feed/podcast/",
         "website": "https://podcast.happywesternhorse.de/",
-        "cover_url": "https://podcast.happywesternhorse.de/wp-content/uploads/2018/05/Titelbild-final-300x300.jpg"
+        "cover_url": "https://podcast.happywesternhorse.de/wp-content/uploads/2018/05/Titelbild-final-300x300.jpg",
+        "added": "2019-02-10"
     },
     {
         "title": "rennSandale",
         "feed": "http://www.rennsandale.de/feed/mp3/",
         "website": "http://www.rennsandale.de/",
-        "cover_url": "http://www.rennsandale.de/wp-content/uploads/2019/02/cropped-logo_600x600-1.jpg"
+        "cover_url": "http://www.rennsandale.de/wp-content/uploads/2019/02/cropped-logo_600x600-1.jpg",
+        "added": "2019-02-10"
     },
     {
         "title": "Runner's World",
         "feed": "https://hearthis.at/runners-world/podcast/",
-        "website": "https://www.runnersworld.de/podcast"
+        "website": "https://www.runnersworld.de/podcast",
+        "added": "2019-06-11"
     },
     {
         "title": "runskills",
         "feed": "https://spe02e.podcaster.de/runskills-community.rss",
-        "website": "https://www.runskills.de/"
+        "website": "https://www.runskills.de/",
+        "added": "2019-06-11"
     },
     {
         "title": "narathon - von 0 auf 21",
         "feed": "https://1l4swt6.podcaster.de/narathon.rss",
-        "website": "https://www.podcast.de/podcast/617979/"
+        "website": "https://www.podcast.de/podcast/617979/",
+        "added": "2019-06-11"
     },
     {
         "title": "#Läuft - der Laufpodcast",
         "feed": "https://anchor.fm/s/85c1234/podcast/rss",
-        "website": "https://www.hashtaglaeuft.de/"
+        "website": "https://www.hashtaglaeuft.de/",
+        "added": "2019-06-11"
     },
     {
         "title": "Mainathlet - Der Leichtathletik Podcast",
         "feed": "https://pinecast.com/feed/mainathlet",
-        "website": "https://www.mainathlet.de/"
+        "website": "https://www.mainathlet.de/",
+        "added": "2019-08-13"
     },
     {
         "title": "LULTRAS – LOVE SPORTS",
         "feed": "https://www.ausdauer-coaches.de/feed/mp3/",
-        "website": "https://www.ausdauer-coaches.de/podcast-lultras-love-sports/"
+        "website": "https://www.ausdauer-coaches.de/podcast-lultras-love-sports/",
+        "added": "2019-08-13"
     },
     {
         "title": "Vape and Run - Rennen statt Rauchen.",
         "feed": "http://12z6nyq.podcaster.de/vapeandrun.rss",
-        "website": "http://vape-and-run.de/"
+        "website": "http://vape-and-run.de/",
+        "added": "2019-08-13"
     },
     {
         "title": "Run Fiction Podcast",
         "feed": "http://feeds.soundcloud.com/users/soundcloud:users:739060675/sounds.rss",
-        "website": "https://soundcloud.com/user-514784606/"
+        "website": "https://soundcloud.com/user-514784606/",
+        "added": "2019-12-08"
     },
     {
         "title": "M&M's on Tour - Der Laufpodcast",
         "feed": "https://jebmzw.podcaster.de/MMs-on-Tour-Der-Laufpodcast.rss",
-        "website": "https://www.podcast.de/podcast/740748/"
+        "website": "https://www.podcast.de/podcast/740748/",
+        "added": "2019-12-15"
     },
     {
         "title": "Laufen & Leben - Anna Hughes",
         "feed": "https://12ck3od.podcaster.de/annachughes.rss",
-        "website": "http://annachughes.com/podcast/"
+        "website": "http://annachughes.com/podcast/",
+        "added": "2020-01-03"
     },
     {
         "title": "Endlich mehr Sport",
         "feed": "https://ausdauerblog.podigee.io/feed/mp3",
-        "website": "https://www.ausdauerblog.de/podcast/"
+        "website": "https://www.ausdauerblog.de/podcast/",
+        "added": "2020-01-03"
     },
     {
         "title": "Auslaufen Podcast",
         "feed": "https://anchor.fm/s/23c1c28/podcast/rss",
-        "website": "http://auslaufen-podcast.de/"
+        "website": "http://auslaufen-podcast.de/",
+        "added": "2020-01-04"
     },
     {
         "title": "lauf-faul.de Podcast",
         "feed": "http://lauf-faul.de/feed/mp3/",
-        "website": "http://lauf-faul.de/"
+        "website": "http://lauf-faul.de/",
+        "added": "2020-01-04"
     },
     {
         "title": "xc-run.de Podcast",
         "feed": "https://anchor.fm/s/f4dfea4/podcast/rss",
-        "website": "https://xc-run.de/themen/podcast/"
+        "website": "https://xc-run.de/themen/podcast/",
+        "added": "2020-01-04"
     },
     {
         "title": "CrossCast - Der OCR Podcast",
         "feed": "https://teamchriscross.de/feed/ocr/",
-        "website": "https://teamchriscross.de"
+        "website": "https://teamchriscross.de",
+        "added": "2020-01-04"
     },
     {
         "title": "PACEPRESSO",
         "feed": "https://anchor.fm/s/118e1bcc/podcast/rss",
-        "website": "https://anchor.fm/pacepresso"
+        "website": "https://anchor.fm/pacepresso",
+        "added": "2020-01-04"
     },
     {
-        "title": "So läuft es - Der Laufpodcast mit Peter Tauber & Mike Kleiß",
+        "title": "So läuft es - Der Laufpodcast mit Peter Tauber &gitk Mike Kleiß",
         "feed": "https://so-laeuft-es.podigee.io/feed/mp3",
-        "website": "https://so-laeuft-es.podigee.io"
+        "website": "https://so-laeuft-es.podigee.io",
+        "added": "2020-01-04"
     }
 ]
