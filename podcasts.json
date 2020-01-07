@@ -267,7 +267,7 @@
         "added": "2020-01-04"
     },
     {
-        "title": "So läuft es - Der Laufpodcast mit Peter Tauber &gitk Mike Kleiß",
+        "title": "So läuft es - Der Laufpodcast mit Peter Tauber & Mike Kleiß",
         "feed": "https://so-laeuft-es.podigee.io/feed/mp3",
         "website": "https://so-laeuft-es.podigee.io",
         "added": "2020-01-04"
@@ -282,6 +282,12 @@
         "title": "Daniel Pugge - Performance Podcast",
         "feed": "http://lowcarbsport.de/rss/podcast",
         "website": "http://lowcarbsport.de/",
+        "added": "2020-01-07"
+    },
+    {
+        "title": "50ShadesOfRunning",
+        "feed": "https://anchor.fm/s/8b1f6e0/podcast/rss",
+        "website": "https://anchor.fm/sandra-mastropietro",
         "added": "2020-01-07"
     }
 ]
