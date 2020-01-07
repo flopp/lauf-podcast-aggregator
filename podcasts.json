@@ -271,5 +271,17 @@
         "feed": "https://so-laeuft-es.podigee.io/feed/mp3",
         "website": "https://so-laeuft-es.podigee.io",
         "added": "2020-01-04"
+    },
+    {
+        "title": "DerBreitenbacher",
+        "feed": "https://derbreitenbacher.de/feed/m4a/",
+        "website": "https://derbreitenbacher.de/",
+        "added": "2020-01-07"
+    },
+    {
+        "title": "Daniel Pugge - Performance Podcast",
+        "feed": "http://lowcarbsport.de/rss/podcast",
+        "website": "http://lowcarbsport.de/",
+        "added": "2020-01-07"
     }
 ]
