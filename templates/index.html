@@ -18,21 +18,20 @@ Dies ist eine manuell kuratierte Liste von deutschsprachigen Podcasts, die sich 
     <div class="row">
         {% for p in podcasts %}
         <div class="col-md-4">
-            <div class="card mb-4 box-shadow">
-                <a href="{{p.sanitized_title}}/">
+            <a href="{{p.sanitized_title}}/" class="text-decoration-none">
+                <div class="card mb-4 box-shadow">
                     <img class="card-img-top" src="{{p.sanitized_title}}/cover.jpg">
-                </a>
-                <div class="card-body">
-                    <h5 class="card-title">{{p.title}} </h5>
-                    <p>
-                        Letzte Episode: {{p.last_publish|timestamp2date}}
-                    </p>
-
-                    {% if p.new %}
-                    <span class="badge badge-pill badge-success">Neu hinzugefügt am {{ p.added }}</span>
-                    {% endif %}
+                    <div class="card-body">
+                        <h5 class="card-title">{{p.title}} </h5>
+                        <p>
+                            Letzte Episode: {{p.last_publish|timestamp2date}}
+                        </p>
+                        {% if p.new %}
+                        <span class="badge badge-pill badge-success">Neu hinzugefügt am {{ p.added }}</span>
+                        {% endif %}
+                    </div>
                 </div>
-            </div>
+            </a>
         </div>
         {% endfor %}
     </div>
