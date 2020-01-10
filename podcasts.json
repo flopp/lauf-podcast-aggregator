@@ -289,5 +289,29 @@
         "feed": "https://anchor.fm/s/8b1f6e0/podcast/rss",
         "website": "https://anchor.fm/sandra-mastropietro",
         "added": "2020-01-07"
+    },
+    {
+        "title": "Sugarrunner",
+        "feed": "https://sugarrunner.podigee.io/feed/mp3",
+        "website": "http://sugarrunner.com/",
+        "added": "2020-01-10"
+    },
+    {
+        "title": "Der Trailpirat",
+        "feed": "https://dertrailpirat.podigee.io/feed/aac",
+        "website": "https://dertrailpirat.podigee.io",
+        "added": "2020-01-10"
+    },
+    {
+        "title": "Lauftraining Podcast",
+        "feed": "https://onestepfaster.com/podcast/feed/lauftraining-podcast/",
+        "website": "https://onestepfaster.com/podcast",
+        "added": "2020-01-10"
+    },
+    {
+        "title": "Hobbyläufer Podcast",
+        "feed": "http://feeds.soundcloud.com/users/soundcloud:users:272899282/sounds.rss",
+        "website": "https://soundcloud.com/trailrun",
+        "added": "2020-01-10"
     }
 ]
