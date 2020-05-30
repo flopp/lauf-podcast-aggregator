@@ -337,5 +337,17 @@
         "feed": "https://zielverpflegung.podigee.io/feed/aac",
         "website": "https://zielverpflegung.podigee.io/",
         "added": "2020-05-17"
+    },
+    {
+        "title": "RUNFASTEASY - Der Laufpodcast",
+        "feed": "https://anchor.fm/s/20a273d8/podcast/rss",
+        "website": "https://anchor.fm/runfasteasy",
+        "added": "2020-05-30"
+    },
+    {
+        "title": "Laufen ist einfach mit Jan Fitschen",
+        "feed": "https://anchor.fm/s/216c6328/podcast/rss",
+        "website": "https://anchor.fm/laufenisteinfach",
+        "added": "2020-05-30"
     }
 ]
