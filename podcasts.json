@@ -355,5 +355,11 @@
         "feed": "http://rassellunge.de/?feed=mp3",
         "website": "https://rassellunge.de/",
         "added": "2020-06-02"
+    },
+    {
+        "title": "Wie läuft's - Trail Talk mit DYNAFIT",
+        "feed": "http://feeds.soundcloud.com/users/soundcloud:users:806902063/sounds.rss",
+        "website": "https://www.dynafit.com/de-de/trail-running-tipps-podcast",
+        "added": "2020-06-08"
     }
 ]
