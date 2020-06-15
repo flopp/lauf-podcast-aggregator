@@ -367,5 +367,11 @@
         "feed": "https://p59amv.podcaster.de/ichhasselaufen.rss",
         "website": "https://www.ichhasselaufen.de/",
         "added": "2020-06-15"
+    },
+    {
+        "title": "Gebabbel",
+        "feed": "https://ueber-das-laufen.de/feed/mp3/",
+        "website": "https://ueber-das-laufen.de/gebabbel/",
+        "added": "2020-06-15"
     }
 ]
