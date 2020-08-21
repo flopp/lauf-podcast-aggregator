@@ -372,5 +372,11 @@
         "feed": "https://ueber-das-laufen.de/feed/mp3/",
         "website": "https://ueber-das-laufen.de/gebabbel/",
         "added": "2020-06-15"
+    },
+    {
+        "title": "Lucky Trails",
+        "feed": "https://feed.podbean.com/luckytrails/feed.xml",
+        "website": "https://www.lifeisaluckybag.com/podcast/",
+        "added": "2020-08-21"
     }
 ]
