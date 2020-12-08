@@ -372,5 +372,11 @@
         "feed": "https://feed.podbean.com/luckytrails/feed.xml",
         "website": "https://www.lifeisaluckybag.com/podcast/",
         "added": "2020-08-21"
+    },
+    {
+        "title": "Morgenspaziergang",
+        "feed": "https://anchor.fm/s/230351c4/podcast/rss",
+        "website": "https://anchor.fm/max-mockermann",
+        "added": "2020-12-08"
     }
 ]
