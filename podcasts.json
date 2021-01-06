@@ -384,5 +384,17 @@
         "feed": "https://running-podcast.podigee.io/feed/mp3",
         "website": "https://www.running-magazin.com/running-podcast/",
         "added": "2021-01-06"
+    },
+    {
+        "title": "ACHILLES RUNNING Shorts",
+        "feed": "https://rss.acast.com/achilles-running-shorts",
+        "website": "https://www.achilles-running.de",
+        "added": "2021-01-06"
+    },
+    {
+        "title": "Running Free mit Florian Reiter",
+        "feed": "https://anchor.fm/s/143af994/podcast/rss",
+        "website": "https://www.reiterflorian.at",
+        "added": "2021-01-06"
     }
 ]
