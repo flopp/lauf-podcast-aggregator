@@ -378,5 +378,11 @@
         "feed": "https://anchor.fm/s/230351c4/podcast/rss",
         "website": "https://anchor.fm/max-mockermann",
         "added": "2020-12-08"
+    },
+    {
+        "title": "So läuft das Leben - der RUNNING-Podcast",
+        "feed": "https://running-podcast.podigee.io/feed/mp3",
+        "website": "https://www.running-magazin.com/running-podcast/",
+        "added": "2021-01-06"
     }
 ]
