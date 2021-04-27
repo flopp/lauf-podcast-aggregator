@@ -396,5 +396,23 @@
         "feed": "https://anchor.fm/s/143af994/podcast/rss",
         "website": "https://www.reiterflorian.at",
         "added": "2021-01-06"
+    },
+    {
+        "title": "Renntempo",
+        "feed": "https://anchor.fm/s/54d32f1c/podcast/rss",
+        "website": "https://www.andreasgriess.de/",
+        "added": "2021-04-27"
+    },
+    {
+        "title": "Sie läuft. Er rennt. - der Lauf-Podcast des stern",
+        "feed": "https://rss.art19.com/sie-lauft-er-rennt",
+        "website": "https://art19.com/shows/sie-lauft-er-rennt",
+        "added": "2021-04-27"
+    },
+    {
+        "title": "EHRLICH und DIREKT",
+        "feed": "https://anchor.fm/s/3d5ee894/podcast/rss",
+        "website": "https://lauf-weiter.de/podcast/",
+        "added": "2021-04-27"
     }
 ]
