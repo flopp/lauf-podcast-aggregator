@@ -426,5 +426,17 @@
         "feed": "https://anchor.fm/s/1eba92f8/podcast/rss",
         "website": "https://anchor.fm/jana-deters",
         "added": "2021-04-27"
+    },
+    {
+        "title": "Laufen mit Herz",
+        "feed": "https://anchor.fm/s/4872c570/podcast/rss",
+        "website": "https://anchor.fm/laufenmitherz_kh",
+        "added": "2021-05-02"
+    },
+    {
+        "title": "RUNTiMES Podcast",
+        "feed": "https://runtimes.podigee.io/feed/aac",
+        "website": "https://run-times.de/podcast/",
+        "added": "2021-05-02"
     }
 ]
