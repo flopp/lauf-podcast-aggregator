@@ -23,8 +23,8 @@ class Downloader:
         results = [pool.apply_async(self.download_if_not_exists, j) for j in self._jobs]
         for r in results:
             ok, msg = r.get()
-            if not ok:
-                print(msg)
+            #if not ok:
+            #    print(msg)
         self._jobs = []
 
     def download_if_not_exists(
