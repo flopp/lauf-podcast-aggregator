@@ -50,6 +50,7 @@ def main() -> None:
         cache_dir=args.cache_dir,
         export_dir=args.export_dir,
         templates_dir=args.templates_dir,
+        fallback_image=args.no_image,
         base_url=args.base_url
         if args.base_url
         else "file://{}".format(os.path.abspath(args.export_dir)),

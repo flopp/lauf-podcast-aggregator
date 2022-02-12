@@ -23,12 +23,13 @@ class Aggregator:
         cache_dir: str,
         export_dir: str,
         templates_dir: str,
+        fallback_image: str,
         base_url: str,
     ) -> None:
         self._downloader = Downloader(
             4, "Lauf Podcast Aggregator, https://lauf-podcasts.flopp.net/"
         )
-        self._imagescaler = ImageScaler(4)
+        self._imagescaler = ImageScaler(4, fallback_image)
         self._podcasts_json_file = podcasts_json
         self._cache_dir = cache_dir
         self._export_dir = export_dir
