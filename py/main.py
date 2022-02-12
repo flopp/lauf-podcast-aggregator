@@ -26,6 +26,13 @@ def main() -> None:
         type=str,
         default="templates",
     )
+    args_parser.add_argument(
+        "--no-image",
+        dest="no_image",
+        metavar="PNGFILE",
+        type=str,
+        default="img/no-image.png",
+    )
     args_parser.add_argument("--base-url", dest="base_url", metavar="URL", type=str)
     args_parser.add_argument(
         "--podcasts-json",

@@ -10,16 +10,17 @@ from PIL import Image, ImageFilter  # type: ignore
 
 
 class ImageScaler:
-    def __init__(self, threads: int):
+    def __init__(self, threads: int, fallback_image: str):
         self._threads = threads
-        self._jobs: List[Tuple[str, str, int]] = []
+        self._fallback_image = fallback_image
+        self._jobs: List[Tuple[str, str, str, int]] = []
         self._blur_filters: Dict[int, ImageFilter.GaussianBlur] = {}
 
     def add_job(self, source_file: str, target_file: str, max_dim: int) -> None:
         blur_size = int(max_dim / 16)
         if blur_size not in self._blur_filters:
             self._blur_filters[blur_size] = ImageFilter.GaussianBlur(blur_size)
-        self._jobs.append((source_file, target_file, max_dim))
+        self._jobs.append((source_file, self._fallback_image, target_file, max_dim))
 
     def run(self) -> None:
         pool = multiprocessing.Pool(self._threads)
@@ -31,15 +32,17 @@ class ImageScaler:
         self._jobs = []
 
     def _execute_scale_job(
-        self, source_file: str, target_file: str, max_dim: int
+        self, source_file: str, fallback_image: str, target_file: str, max_dim: int
     ) -> Tuple[bool, str]:
         if os.path.exists(target_file):
             return True, "SCALING: cache hit {0}".format(target_file)
-        if not os.path.exists(source_file):
-            return False, "SCALING: failed; source missing {0}".format(source_file)
         dir = os.path.dirname(target_file)
         os.makedirs(dir, exist_ok=True)
-        return self._scale_image(source_file, target_file, max_dim)
+
+        ok, message = self._scale_image(source_file, target_file, max_dim)
+        if not ok:
+            ok, fallback_message = self._scale_image(fallback_image, target_file, max_dim)
+        return ok, message if not ok else fallback_message
 
     def _scale_image(
         self, source_file: str, target_file: str, max_dim: int
