@@ -456,5 +456,12 @@
         "feed": "https://freilaeufer.podigee.io/feed/mp3",
         "website": "https://freilaeufer.podigee.io/",
         "added": "2022-02-12"
+    },
+    {
+        "title": "Run.Cook.Eat.Repeat.",
+        "feed": "https://feeds.runcookeatrepeat.de/feed",
+        "website": "https://runcookeatrepeat.de/",
+        "added": "2022-02-12"
+
     }
 ]
