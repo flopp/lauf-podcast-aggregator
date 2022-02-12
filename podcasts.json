@@ -171,7 +171,7 @@
     },
     {
         "title": "Runner's World",
-        "feed": "https://hearthis.at/runners-world/podcast/",
+        "feed": "https://runnersworldpodcast.podigee.io/feed/mp3",
         "website": "https://www.runnersworld.de/podcast",
         "added": "2019-06-11"
     },
@@ -438,5 +438,23 @@
         "feed": "https://runtimes.podigee.io/feed/aac",
         "website": "https://run-times.de/podcast/",
         "added": "2021-05-02"
+    },
+    {
+        "title": "MittelstreckenHussle",
+        "feed": "https://anchor.fm/s/19b031dc/podcast/rss",
+        "website": "https://anchor.fm/mittelstrecken-hussle",
+        "added": "2022-02-12"
+    },
+    {
+        "title": "Fight your Schweinehund - laber Rhabarber Workout",
+        "feed": "https://anchor.fm/s/16ec83d8/podcast/rss",
+        "website": "https://www.fight-your-schweinehund.de/",
+        "added": "2022-02-12"
+    },
+    {
+        "title": "Freiläufer",
+        "feed": "https://freilaeufer.podigee.io/feed/mp3",
+        "website": "https://freilaeufer.podigee.io/",
+        "added": "2022-02-12"
     }
 ]
