@@ -462,6 +462,29 @@
         "feed": "https://feeds.runcookeatrepeat.de/feed",
         "website": "https://runcookeatrepeat.de/",
         "added": "2022-02-12"
-
+    },
+    {
+        "title": "Letzter Berg - Laufsport Bunert Wuppertal.",
+        "feed": "https://feeds.buzzsprout.com/1420120.rss",
+        "website": "https://www.buzzsprout.com/1420120",
+        "added": "2023-01-24"
+    },
+    {
+        "title": "ENDSPURT",
+        "feed": "https://anchor.fm/s/d99c42d8/podcast/rss",
+        "website": "https://endspurt-podcast.de/",
+        "added": "2023-01-24"
+    },
+    {
+        "title": "Vom Laufen",
+        "feed": "https://letscast.fm/podcasts/vom-laufen-07f1a5d1/feed",
+        "website": "https://vomlaufen.letscast.fm",
+        "added": "2023-01-24"
+    },
+    {
+        "title": "Trail Rookies",
+        "feed": "https://trail-rookies.podigee.io/feed/mp3",
+        "website": "https://trail-rookies.ch/",
+        "added": "2023-01-24"
     }
 ]
