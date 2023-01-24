@@ -40,6 +40,7 @@ class ImageScaler:
         os.makedirs(dir, exist_ok=True)
 
         ok, message = self._scale_image(source_file, target_file, max_dim)
+        fallback_message = "UNKNOWN"
         if not ok:
             ok, fallback_message = self._scale_image(fallback_image, target_file, max_dim)
         return ok, message if not ok else fallback_message
